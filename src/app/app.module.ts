@@ -4,13 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {PortalModule} from '@angular/cdk/portal';
+import { SideRouteComponent } from './components/side-route/side-route.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideRouteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PortalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
